@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .logo {
+            background-color: blanchedalmond;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle; 
+        }
+        .logo ul {
+            list-style-type: none; 
+            display: inline; 
+            margin-left: 20px; 
+        }
+        .logo li {
+            display: inline;
+            margin-right: 20px; 
+        }
+        .logo a, .logo a:visited {
+            text-decoration: none; 
+            color: black; 
+        }
+        .logo button {
+            border: none; 
+            background-color: transparent; 
+            cursor: pointer; 
+        }
+        .intro img {
+            width: 100vw;
+            height: 400px;
+            filter: blur(4px);
+        }
+        .option {
+            display: flex;
+        }
+        .option > div {
+            flex: 1;
+            margin: 10px;
+            position: relative; 
+        }
+        .option img {
+            max-width: 100%;
+            height: auto;
+        }
+        .option button img {
+            width: 50vw;
+            height: 250px;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:blueviolet;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            pointer-events: none;
+        }
+        .text{
+            position: absolute;
+            top: 13%;
+            left: 5%;
+            font-size: 90px;
+            color:rgb(251, 253, 250);
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="/static/logo.png" alt="logo">
+        <ul>
+            <li><a href="index.html"><button>HOME</button></a></li>
+            <li><a href="doctors.html"><button>DOCTOR LIST</button></a></li>
+            <li><a href="about.html"><button>ABOUT US</button></a></li>
+        </ul>
+    </div>
+    <div class="intro">
+        <img src="https://source.unsplash.com/1000x800/?doctor" class="intro-img" alt="">
+        <div class="text">DISCOVER REAL-TIME DOCTOR 
+            <div class="texts">AVAILABILITY AND BOOK </div> 
+            <div class="txt">APPOINTMENTS INSTANTLY.</div> </div>
+    </div>    
+    <div class="option">
+        <div class="available">
+            <a href="availability.html">
+                <button>
+                    <img src="/static/availability.jpeg.jpg" alt="blank">
+                    <div class="overlay-text">AVAILABILITY</div>
+                </button>
+            </a>
+        </div>
+        <div>
+            <a href="template.html">
+                <button>
+                    <img src="/static/appointment.jpeg.jpg" alt="appointment">
+                    <div class="overlay-text">APPOINTMENT</div>
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
