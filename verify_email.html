@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+</head>
+<body>
+    <h2>Enter Doctor's Email</h2>
+    <form action="{{ url_for('verify_email') }}" method="POST">
+        <label for="email">Doctor's Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Send OTP</button>
+    </form>
+</body>
+</html>
